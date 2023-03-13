@@ -1,11 +1,34 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
-<html> 
+ <html> 
  <head> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+ <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+ <style> 
+ /*竖屏*/ 
+ @media only screen and (orientation:portrait ) { 
+ body{ 
+ background-position: center; 
+ background-repeat:no-repeat;  
+ background-size:contain; 
+ -moz-background-size:100% 100%; 
+ display: flex; 
+ flex-direction: row; 
+ background-image: url(Classic-Gelatin.jpg.png); 
+ } 
+ } 
+ /*横屏*/ 
+ @media only screen and (orientation:landscape) { 
+ body{ 
+ background-position: center; 
+ background-repeat:no-repeat;  
+ background-size:contain; 
+ -moz-background-size:100% 100%; 
+ display: flex; 
+ flex-direction: column; 
+ background-image: url(1.jpg); 
+ } 
+ } 
+ </style> 
  </head> 
  <body> 
-  <div class="msg_desc" style="text-align:center;"> 
-   <img style="max-width:100%;overflow:hidden;" src="Classic-Gelatin.jpg" alt=""> 
-  </div> 
  </body> 
-</html> 
+ </html>
